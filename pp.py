@@ -13,7 +13,7 @@ def answer(line):
         if n==0:
             sa=1
         else:
-            sa=sa*a
+              sa=sa*a
         sb=1
         for m in range(0, 1000):
             if m==0:
@@ -26,7 +26,13 @@ def answer(line):
             elif s>=100000:
                 break
 
-    return final
+    for i in range(0, len(final)):
+        final[i]=str(final[i])
+    final=''.join(final)
+    aaa=[i for i in final if i==str(line[2])]
+
+    return len(aaa)
+
 
 f=open(sys.argv[1])
 file=f.readlines()
