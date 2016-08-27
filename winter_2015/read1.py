@@ -20,7 +20,7 @@ i=1
 
 while i<len(file):
     glue=''
-    for ii in range(0, 3):
+    for w in range(0, 3):
         line=file[i].rstrip('\r\n\t').lstrip('\r\n\t ')
         glue=glue+line+' '
         i=i+1
