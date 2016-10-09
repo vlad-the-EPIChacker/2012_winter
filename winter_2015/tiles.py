@@ -8,7 +8,7 @@ def math5(x):
     a=a+a/10
     if  a%10==0:
         return a
-    else:
+    else:5
         return int(a)+1
 
 f=open(sys.argv[1])
