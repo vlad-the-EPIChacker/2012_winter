@@ -23,7 +23,7 @@ def chess(a):
     y=pos[1]+2
     if x>-1 and x<8 and y>-1 and y<8:
         board[y][x]='?'
-
+x
     x=pos[0]+1
     y=pos[1]+2
     if x>-1 and x<8 and y>-1 and y<8:
