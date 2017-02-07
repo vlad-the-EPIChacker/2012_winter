@@ -2,13 +2,13 @@ import sys
 
 def draw(n):
     s=2*n-2
-    for i in range(0, n):
+    for i in range(0,n):
         row=[' ',' ',' ',' ',' ',' ',' ',' ']
         row[i]='*'
-        if i<n-1:
-            row[s-i]='*'
+        row[s-i]='*'
         print ''.join(row)
-
+        row[i]=''
+        row[s-1]=''
 
 
 f=open(sys.argv[1])
